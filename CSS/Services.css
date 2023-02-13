@@ -1,0 +1,113 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 22 Jan 2023, 13:04:43
+    Author     : Machatine Augusto
+
+This css file contains the styling for the services section
+*/
+
+/*Services Section spacing and background*/
+
+.Services-Section{
+     width: 100%;
+     margin: 0;
+   /* background-color: #517AA4;*/
+      background-image:  url("../IMGS/u-hovered2.jpg");
+      background-size: cover;
+}
+
+/*Service section title*/
+
+.Services-Section .Section-Title h1{
+    text-align: center;
+    position: relative;
+    color:white;
+    
+}
+
+/*Services*/
+.rowo{
+    width: 100%;
+      margin:0;
+   min-height: 100vh;
+  /*display: flex;*/
+}
+   
+.Servicos{
+ float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+ min-width: 60vh;
+ position: relative;
+ left: 55px;
+ border: 2px solid white;
+ top:20px;
+   margin: 5px;
+   padding: 30px;
+   border-radius: 20px;
+}
+
+/*Hover on background image*/
+
+.Services-Section:before{
+    content: " ";
+    box-sizing: border-box;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom:0;
+    background-color: black;
+    opacity: 1;
+    z-index: 10;
+}
+
+/*The icons of the service section*/
+
+.Service-image img{
+    position: relative;
+    width: 100px;
+    height: 80px;
+  left:110px;
+ 
+}
+
+/*bbbbb*/
+
+.Service-content{
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    color:white;
+}
+
+/*reponsividade*/
+
+@media screen and (max-width:750px){
+    
+    .rowo{
+   
+  display: block;
+}
+    
+.Services-Section{
+      background-size: contain;
+      
+}
+.Servicos{
+ float: none;
+}
+   
+}
+
+    @media screen and (min-width:760px) and (max-width:900px){
+        
+        .rowo{
+  
+   min-height: 125vh;
+  /*display: flex;*/
+}
+        
+    }
