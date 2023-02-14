@@ -39,7 +39,7 @@ $(function(){
     
     
     /*Android and Tablet menu buttom activation*/
-   $(".dropbtn").click(function(){
+   $(".dropbtn").on("tap",function(){
       
        $(".dropdown-content").css("display","block");
       
